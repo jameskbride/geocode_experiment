@@ -1,21 +1,20 @@
 # GeocodeExperiment
 
-**TODO: Add description**
+This is a short throwaway project to geocode a list of addresses into lat/lng coordinates. It uses the [GoogleMaps](https://hex.pm/packages/google_maps/) hex package to 
+invoke the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview). 
 
-## Installation
+## Building
+First, make sure you've set your Google Maps API key as an environment variable at `GOOGLE_MAPS_API_KEY`.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `geocode_experiment` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:geocode_experiment, "~> 0.1.0"}
-  ]
-end
+```shell
+mix compile
+mix escript.build
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/geocode_experiment>.
+## Usage
+```shell
+./geocode_experiment addresses.txt
+```
 
+Where `addresses.txt` is a file of addresses with a single address per line. It outputs lat/lng coordinates for 
+each address to standard out in the format `lat,lng`, with one coordinate per line.
