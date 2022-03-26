@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="google_maps" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/google_maps/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/google_maps/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/google_maps/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/google_maps/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/google_maps/lib" />
+      <root url="file://$PROJECT_DIR$/deps/google_maps/lib" />
+    </SOURCES>
+  </library>
+</component>
