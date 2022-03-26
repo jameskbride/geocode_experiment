@@ -24,3 +24,6 @@ geocode_experiment-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Ignore the executable
+/geocode_experiment
