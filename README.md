@@ -18,3 +18,6 @@ mix escript.build
 
 Where `addresses.txt` is a file of addresses with a single address per line. It outputs lat/lng coordinates for 
 each address to standard out in the format `lat,lng`, with one coordinate per line.
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
