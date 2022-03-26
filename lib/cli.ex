@@ -1,9 +1,11 @@
+alias GeocodeExperiment.{AddressFileReader}
+
 defmodule GeocodeExperiment.CLI do
   def main(args \\ []) do
     args
     |> parse_args()
     |> response()
-    |> IO.puts()
+    |> AddressFileReader.read_address_file
   end
 
   defp parse_args(args) do
